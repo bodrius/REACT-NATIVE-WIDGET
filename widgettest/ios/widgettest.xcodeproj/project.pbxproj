@@ -19,6 +19,15 @@
 		627369F37F16771CA2C23745 /* libPods-widgettest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B61DEE378FDF786E5635A9 /* libPods-widgettest.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BB72A85976BCCD7FD2DB6EE4 /* libPods-widgettest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D23B498CCCABBADFDD21A /* libPods-widgettest-tvOS.a */; };
+		C0CFBFA825C0865800D78729 /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFBFA725C0865700D78729 /* libswiftWebKit.tbd */; };
+		C0CFBFB325C0870600D78729 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFBFB225C0870600D78729 /* WidgetKit.framework */; };
+		C0CFBFB525C0870600D78729 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFBFB425C0870600D78729 /* SwiftUI.framework */; };
+		C0CFBFB825C0870700D78729 /* triowidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CFBFB725C0870700D78729 /* triowidget.swift */; };
+		C0CFBFBB25C0870A00D78729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CFBFBA25C0870A00D78729 /* Assets.xcassets */; };
+		C0CFBFBD25C0870A00D78729 /* triowidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C0CFBFB925C0870700D78729 /* triowidget.intentdefinition */; };
+		C0CFBFBE25C0870A00D78729 /* triowidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C0CFBFB925C0870700D78729 /* triowidget.intentdefinition */; };
+		C0CFBFC125C0870A00D78729 /* triowidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0CFBFB125C0870600D78729 /* triowidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0CFBFFC25C0877D00D78729 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		EF70C1039E9CA825C74D3B92 /* libPods-widgettest-widgettestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690C71244B6189734657C78 /* libPods-widgettest-widgettestTests.a */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +46,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "widgettest-tvOS";
 		};
+		C0CFBFBF25C0870A00D78729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CFBFB025C0870600D78729;
+			remoteInfo = triowidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0CFBFC525C0870A00D78729 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0CFBFC125C0870A00D78729 /* triowidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -64,6 +94,14 @@
 		A6B61DEE378FDF786E5635A9 /* libPods-widgettest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-widgettest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB18A337CB1B57E777D66EEB /* Pods-widgettest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widgettest.debug.xcconfig"; path = "Target Support Files/Pods-widgettest/Pods-widgettest.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFB0FE2490CB5F580BA65DD /* Pods-widgettest-widgettestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widgettest-widgettestTests.release.xcconfig"; path = "Target Support Files/Pods-widgettest-widgettestTests/Pods-widgettest-widgettestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0CFBFA725C0865700D78729 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
+		C0CFBFB125C0870600D78729 /* triowidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = triowidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CFBFB225C0870600D78729 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C0CFBFB425C0870600D78729 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C0CFBFB725C0870700D78729 /* triowidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triowidget.swift; sourceTree = "<group>"; };
+		C0CFBFB925C0870700D78729 /* triowidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = triowidget.intentdefinition; sourceTree = "<group>"; };
+		C0CFBFBA25C0870A00D78729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0CFBFBC25C0870A00D78729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5D23B498CCCABBADFDD21A /* libPods-widgettest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-widgettest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -82,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CFBFA825C0865800D78729 /* libswiftWebKit.tbd in Frameworks */,
 				627369F37F16771CA2C23745 /* libPods-widgettest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +138,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C48182C0D1D70A3888D47D8 /* libPods-widgettest-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CFBFAE25C0870600D78729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CFBFFC25C0877D00D78729 /* JavaScriptCore.framework in Frameworks */,
+				C0CFBFB525C0870600D78729 /* SwiftUI.framework in Frameworks */,
+				C0CFBFB325C0870600D78729 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +188,15 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0CFBFA725C0865700D78729 /* libswiftWebKit.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				A6B61DEE378FDF786E5635A9 /* libPods-widgettest.a */,
 				CB5D23B498CCCABBADFDD21A /* libPods-widgettest-tvOS.a */,
 				89C57DDEC93F4137587B4BEE /* libPods-widgettest-tvOSTests.a */,
 				8690C71244B6189734657C78 /* libPods-widgettest-widgettestTests.a */,
+				C0CFBFB225C0870600D78729 /* WidgetKit.framework */,
+				C0CFBFB425C0870600D78729 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +214,7 @@
 				13B07FAE1A68108700A75B9A /* widgettest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* widgettestTests */,
+				C0CFBFB625C0870700D78729 /* triowidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E3449F12FAC938CE80DF9526 /* Pods */,
@@ -178,8 +231,20 @@
 				00E356EE1AD99517003FC87E /* widgettestTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* widgettest-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* widgettest-tvOSTests.xctest */,
+				C0CFBFB125C0870600D78729 /* triowidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C0CFBFB625C0870700D78729 /* triowidget */ = {
+			isa = PBXGroup;
+			children = (
+				C0CFBFB725C0870700D78729 /* triowidget.swift */,
+				C0CFBFB925C0870700D78729 /* triowidget.intentdefinition */,
+				C0CFBFBA25C0870A00D78729 /* Assets.xcassets */,
+				C0CFBFBC25C0870A00D78729 /* Info.plist */,
+			);
+			path = triowidget;
 			sourceTree = "<group>";
 		};
 		E3449F12FAC938CE80DF9526 /* Pods */ = {
@@ -194,7 +259,6 @@
 				0ED93869F1A7F230EBAC073B /* Pods-widgettest-widgettestTests.debug.xcconfig */,
 				BDFB0FE2490CB5F580BA65DD /* Pods-widgettest-widgettestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -232,10 +296,12 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				E2E6F7F483FD2AA405F57D5A /* [CP] Copy Pods Resources */,
+				C0CFBFC525C0870A00D78729 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0CFBFC025C0870A00D78729 /* PBXTargetDependency */,
 			);
 			name = widgettest;
 			productName = widgettest;
@@ -281,12 +347,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* widgettest-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C0CFBFB025C0870600D78729 /* triowidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CFBFC225C0870A00D78729 /* Build configuration list for PBXNativeTarget "triowidgetExtension" */;
+			buildPhases = (
+				C0CFBFAD25C0870600D78729 /* Sources */,
+				C0CFBFAE25C0870600D78729 /* Frameworks */,
+				C0CFBFAF25C0870600D78729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = triowidgetExtension;
+			productName = triowidgetExtension;
+			productReference = C0CFBFB125C0870600D78729 /* triowidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -304,6 +388,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					C0CFBFB025C0870600D78729 = {
+						CreatedOnToolsVersion = 12.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -324,6 +412,7 @@
 				00E356ED1AD99517003FC87E /* widgettestTests */,
 				2D02E47A1E0B4A5D006451C7 /* widgettest-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* widgettest-tvOSTests */,
+				C0CFBFB025C0870600D78729 /* triowidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +446,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CFBFAF25C0870600D78729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CFBFBB25C0870A00D78729 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +667,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C0CFBFBE25C0870A00D78729 /* triowidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +688,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0CFBFAD25C0870600D78729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CFBFBD25C0870A00D78729 /* triowidget.intentdefinition in Sources */,
+				C0CFBFB825C0870700D78729 /* triowidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -602,6 +709,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* widgettest-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		C0CFBFC025C0870A00D78729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CFBFB025C0870600D78729 /* triowidgetExtension */;
+			targetProxy = C0CFBFBF25C0870A00D78729 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,12 +765,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB18A337CB1B57E777D66EEB /* Pods-widgettest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = widgettest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -676,11 +793,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11ED620AE433A71FB57CD63B /* Pods-widgettest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = widgettest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -854,7 +976,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -907,12 +1028,70 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0CFBFC325C0870A00D78729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = triowidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.widgettest.triowidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0CFBFC425C0870A00D78729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = triowidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.widgettest.triowidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -960,6 +1139,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CFBFC225C0870A00D78729 /* Build configuration list for PBXNativeTarget "triowidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CFBFC325C0870A00D78729 /* Debug */,
+				C0CFBFC425C0870A00D78729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
