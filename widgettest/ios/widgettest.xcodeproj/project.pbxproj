@@ -94,6 +94,7 @@
 		A6B61DEE378FDF786E5635A9 /* libPods-widgettest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-widgettest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB18A337CB1B57E777D66EEB /* Pods-widgettest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widgettest.debug.xcconfig"; path = "Target Support Files/Pods-widgettest/Pods-widgettest.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFB0FE2490CB5F580BA65DD /* Pods-widgettest-widgettestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widgettest-widgettestTests.release.xcconfig"; path = "Target Support Files/Pods-widgettest-widgettestTests/Pods-widgettest-widgettestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C025FE5625E689CD00FE9F1D /* widgettest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = widgettest.entitlements; path = widgettest/widgettest.entitlements; sourceTree = "<group>"; };
 		C0CFBFA725C0865700D78729 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
 		C0CFBFB125C0870600D78729 /* triowidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = triowidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CFBFB225C0870600D78729 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -174,6 +175,7 @@
 		13B07FAE1A68108700A75B9A /* widgettest */ = {
 			isa = PBXGroup;
 			children = (
+				C025FE5625E689CD00FE9F1D /* widgettest.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -378,6 +380,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = P3U2JAPGA3;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -768,7 +771,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = widgettest/widgettest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3U2JAPGA3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = widgettest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -796,6 +801,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = widgettest/widgettest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = widgettest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
